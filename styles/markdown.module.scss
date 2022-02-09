@@ -1,0 +1,13 @@
+.markdown {
+  h3 {
+    @apply text-lg mb-5 leading-8 font-bold;
+  }
+
+  p {
+    @apply text-lg mb-5 leading-8 break-words [hyphens:manual];
+  }
+
+  a {
+    @apply hover:underline text-blue-600;
+  }
+}
