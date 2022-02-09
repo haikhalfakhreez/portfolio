@@ -9,101 +9,101 @@ export default function Skill() {
     Frontend: [
       {
         name: 'Vue',
-        logoPath: '/assets/vue.svg',
+        logoPath: '/assets/brands/vue.svg',
       },
       {
         name: 'Nuxt JS',
-        logoPath: '/assets/nuxtjs.svg',
+        logoPath: '/assets/brands/nuxtjs.svg',
       },
       {
         name: 'React',
-        logoPath: '/assets/react.svg',
+        logoPath: '/assets/brands/react.svg',
       },
       {
         name: 'Next JS',
-        logoPath: '/assets/nextjs.svg',
+        logoPath: '/assets/brands/nextjs.svg',
       },
     ],
     Backend: [
       {
         name: 'Laravel',
-        logoPath: '/assets/laravel.svg',
+        logoPath: '/assets/brands/laravel.svg',
       },
     ],
     Libraries: [
       {
         name: 'jQuery',
-        logoPath: '/assets/jquery.svg',
+        logoPath: '/assets/brands/jquery.svg',
       },
     ],
     CSS: [
       {
         name: 'Tailwind',
-        logoPath: '/assets/tailwindcss.svg',
+        logoPath: '/assets/brands/tailwindcss.svg',
       },
       {
         name: 'SCSS',
-        logoPath: '/assets/sass.svg',
+        logoPath: '/assets/brands/sass.svg',
       },
       {
         name: 'Bootstrap',
-        logoPath: '/assets/bootstrap.svg',
+        logoPath: '/assets/brands/bootstrap.svg',
       },
       {
         name: 'Material UI (MUI)',
-        logoPath: '/assets/mui.svg',
+        logoPath: '/assets/brands/mui.svg',
       },
     ],
     Design: [
       {
         name: 'Figma',
-        logoPath: '/assets/figma.svg',
+        logoPath: '/assets/brands/figma.svg',
       },
       {
         name: 'Adobe XD',
-        logoPath: '/assets/xd.svg',
+        logoPath: '/assets/brands/xd.svg',
       },
     ],
     Tool: [
       {
         name: 'Git',
-        logoPath: '/assets/git.svg',
+        logoPath: '/assets/brands/git.svg',
       },
       {
         name: 'GitHub',
-        logoPath: '/assets/github.svg',
+        logoPath: '/assets/brands/github.svg',
       },
       {
         name: 'Webpack / Mix',
-        logoPath: '/assets/webpack.svg',
+        logoPath: '/assets/brands/webpack.svg',
       },
       {
         name: 'ClickUp',
-        logoPath: '/assets/clickup.svg',
+        logoPath: '/assets/brands/clickup.svg',
       },
     ],
     Language: [
       {
         name: 'TypeScript',
-        logoPath: '/assets/typescript.svg',
+        logoPath: '/assets/brands/typescript.svg',
       },
       {
         name: 'JavaScript',
-        logoPath: '/assets/javascript.svg',
+        logoPath: '/assets/brands/javascript.svg',
       },
       {
         name: 'PHP',
-        logoPath: '/assets/php.svg',
+        logoPath: '/assets/brands/php.svg',
       },
     ],
     API: [
       {
         name: 'Web API',
-        logoPath: '/assets/webapi.svg',
+        logoPath: '/assets/brands/webapi.svg',
       },
       {
         name: 'Google Map API',
-        logoPath: '/assets/googlemap.svg',
+        logoPath: '/assets/brands/googlemap.svg',
       },
     ],
   }

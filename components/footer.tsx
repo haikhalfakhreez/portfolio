@@ -1,16 +1,86 @@
 import layoutStyles from '../styles/layout.module.scss'
+import Image from 'next/image'
+import { navItems, goToTop } from './navbar'
+import { contacts } from './home/contact'
+import Newtab from './assets/newtab'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 mt-4">
-      <div className={`${layoutStyles.navContainer} relative p-4 text-center sm:p-0 sm:h-12`}>
-        <p className="text-xs text-gray-500 sm:absolute sm:top-2/4 sm:left-2/4 sm:translate-x-[-50%] sm:translate-y-[-40%]">
-          Made with ❤️ by Haikhal Fakhreez
-        </p>
-        <p className="text-xs text-gray-500 mt-1 sm:mt-0 sm:absolute sm:top-2/4 sm:right-4 sm:translate-y-[-40%]">
-          Last Updated: January 2022
-        </p>
+    <footer>
+      <div className="mb-20 flex justify-center">
+        <div className="h-px w-[50px] shrink-0 bg-gray-200" role="separator"></div>
+      </div>
+      <div className={`${layoutStyles.navContainer} mb-20 sm:flex`}>
+        {/* Logo */}
+        <div className="flex items-center sm:w-6/12 sm:flex-col sm:items-start">
+          <a href="/" onClick={goToTop} className="flex items-center justify-center">
+            <Image src="/hf-logo.svg" height={35} width={35} alt="Haikhal Fakhreez Logo" />
+          </a>
+          <div className="ml-6 sm:ml-0">
+            <p className="text-sm text-gray-500 sm:mt-4">
+              Made with<span className="mx-1">❤️</span>by Haikhal Fakhreez
+            </p>
+            <p className="mt-1 text-xs text-gray-500">Last Updated: January 2022</p>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-y-8 sm:mt-0 sm:grow sm:grid-cols-2 sm:gap-y-0 sm:gap-x-3">
+          {/* Nav */}
+          <FooterList
+            title="Website"
+            children={
+              <ul>
+                {navItems.map((item: string) =>
+                  item === 'Home' ? (
+                    <li className="pt-3 text-sm" key={item}>
+                      <a href="/" onClick={goToTop} className="text-secondary link">
+                        {item}
+                      </a>
+                    </li>
+                  ) : (
+                    <li className="pt-3 text-sm" key={item}>
+                      <a href={`#${item.toLowerCase()}`} className="text-secondary link">
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
+              </ul>
+            }
+          />
+
+          {/* Socials */}
+          <FooterList
+            title="Socials"
+            children={
+              <ul>
+                {contacts.map((item) => (
+                  <li className="pt-3 text-sm" key={item.name}>
+                    <a href={item.url} className="text-secondary link" target="_blank" rel="noopener noreferrer">
+                      {item.name}
+                      <Newtab size={10} color="#687076" className="ml-1" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            }
+          />
+        </div>
       </div>
     </footer>
+  )
+}
+
+interface FooterListType {
+  children: React.ReactNode
+  title: string
+}
+
+function FooterList({ children, title }: FooterListType) {
+  return (
+    <div>
+      <h4 className="text-sm font-bold">{title}</h4>
+      {children}
+    </div>
   )
 }

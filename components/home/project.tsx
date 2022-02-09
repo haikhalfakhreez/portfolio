@@ -32,7 +32,7 @@ export default function Project() {
           </h2>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-6">
           {projects.map((item) => (
             <div key={item.name} className="flex grow flex-col overflow-hidden rounded-md shadow">
               <div className="w-full bg-gray-200" style={{ height: '250px' }}></div>

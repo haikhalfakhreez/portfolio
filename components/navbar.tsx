@@ -95,7 +95,7 @@ function toggleBurger(e: React.MouseEvent<HTMLElement>): void {
   e.currentTarget.classList.toggle('open')
 }
 
-function goToTop(e: React.MouseEvent<HTMLElement>): void {
+export function goToTop(e: React.MouseEvent<HTMLElement>): void {
   e.preventDefault()
   window.history.replaceState({}, '', '/')
   window.scrollTo(0, 0)

@@ -15,6 +15,9 @@ module.exports = {
       },
       maxWidth: {
         '800': '832px'
+      },
+      colors: {
+        secondary: '#687076'
       }
     },
   },

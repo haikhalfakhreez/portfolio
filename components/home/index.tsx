@@ -7,7 +7,9 @@ export default function Index() {
       <div className="grid gap-y-6 py-16 text-center">
         {/* TODO: image */}
         <div className="flex justify-center">
-          <div className="h-44 w-44 rounded-full bg-gray-200"></div>
+          <div className="h-44 w-44 overflow-hidden rounded-full border border-gray-200">
+            <Image src="/assets/image/portrait.png" height={176} width={176} alt="Haikhal Fakhreez Portrait" />
+          </div>
         </div>
         <h1 className="section-title">Haikhal Fakhreez</h1>
         <p className="text-lg">Front-end Engineer. Based in Kuala Lumpur.</p>
@@ -15,11 +17,16 @@ export default function Index() {
           <div className="flex gap-x-6 py-1">
             <SocialIcon
               href="https://www.linkedin.com/in/haikhalfakhreez/"
-              src="/assets/linkedin.svg"
+              src="/assets/brands/linkedin.svg"
               size={30}
               alt="LinkedIn"
             />
-            <SocialIcon href="https://github.com/haikhalfakhreez/" src="/assets/github.svg" size={30} alt="GitHub" />
+            <SocialIcon
+              href="https://github.com/haikhalfakhreez/"
+              src="/assets/brands/github.svg"
+              size={30}
+              alt="GitHub"
+            />
           </div>
         </div>
       </div>

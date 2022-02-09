@@ -76,16 +76,16 @@ export default function Experience() {
         <div>
           {/* Work experience */}
           {experiences.map((item) => (
-            <div className="mb-12" key={item.name}>
+            <div className="mb-14" key={item.name}>
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="link">
                 <h3 className="text-xl font-bold">
                   <span>{item.name}</span> <Newtab size={14} />
                 </h3>
               </a>
               <p className="text-sm text-gray-500">{item.period}</p>
-              <ul className="flex gap-2 mt-3 flex-wrap">
+              <ul className="mt-3 flex flex-wrap gap-2">
                 {item.techStack.map((tech) => (
-                  <li className="px-2 py-[2px] bg-gray-700 rounded-md text-xs text-white" key={tech}>
+                  <li className="rounded-md bg-gray-700 px-2 py-[2px] text-xs text-white" key={tech}>
                     {tech}
                   </li>
                 ))}
@@ -95,7 +95,7 @@ export default function Experience() {
                 <ul className="mt-4">
                   {item.pages.map((page) => (
                     <li className="py-1" key={page.name}>
-                      <a href={page.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 link">
+                      <a href={page.url} target="_blank" rel="noopener noreferrer" className="link text-blue-600">
                         {page.name}{' '}
                         <Newtab
                           size={12}
@@ -112,7 +112,7 @@ export default function Experience() {
 
           {/* Both experience */}
           <h3 className="text-xl font-bold">Both my role as a Front-end Engineer includes:</h3>
-          <ul className="list-disc pl-4 mt-4">
+          <ul className="mt-4 list-disc pl-4">
             {bothExperiences.map((item) => (
               <li key={item} className="leading-7" dangerouslySetInnerHTML={{ __html: item }}></li>
             ))}
