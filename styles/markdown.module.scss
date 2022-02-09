@@ -1,13 +1,13 @@
 .markdown {
   h3 {
-    @apply text-lg mb-5 leading-8 font-bold;
+    @apply mb-5 text-lg font-bold leading-8;
   }
 
   p {
-    @apply text-lg mb-5 leading-8 break-words [hyphens:manual];
+    @apply mb-5 break-words text-lg leading-8 [hyphens:manual];
   }
 
   a {
-    @apply hover:underline text-blue-600;
+    @apply text-blue-600 hover:underline;
   }
 }

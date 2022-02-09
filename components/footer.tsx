@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
           <div className="ml-6 sm:ml-0">
             <p className="text-sm text-gray-500 sm:mt-4">
-              Made with<span className="mx-1">❤️</span>by Haikhal Fakhreez
+              Made with<span className="mx-1">❤️</span>by <span className="font-bold">Haikhal Fakhreez</span>
             </p>
             <p className="mt-1 text-xs text-gray-500">Last Updated: January 2022</p>
           </div>

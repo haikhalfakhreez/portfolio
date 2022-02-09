@@ -1,9 +1,15 @@
 import layoutStyles from '../../styles/layout.module.scss'
 import Newtab from '../assets/newtab'
+import Image from 'next/image'
 
 const experiences = [
   {
     name: 'Involve Asia',
+    image: {
+      src: '/assets/logo/involveasia.svg',
+      height: 50,
+      width: 230,
+    },
     url: 'https://app.involve.asia',
     period: 'Nov 2020 - Current',
     techStack: ['Vue', 'Laravel', 'jQuery', 'Bootstrap', 'SCSS', 'DataTable'],
@@ -12,6 +18,11 @@ const experiences = [
   },
   {
     name: 'AdEasy',
+    image: {
+      src: '/assets/logo/adeasy.svg',
+      height: 50,
+      width: 154.7,
+    },
     url: 'https://adeasy.co',
     period: 'Jan 2020 - Oct 2020',
     techStack: ['Vue', 'Laravel', 'jQuery', 'Bootstrap', 'SCSS', 'Google Map API', 'Hubspot'],
@@ -79,7 +90,28 @@ export default function Experience() {
             <div className="mb-14" key={item.name}>
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="link">
                 <h3 className="text-xl font-bold">
-                  <span>{item.name}</span> <Newtab size={14} />
+                  <span className="group relative">
+                    <div className="absolute left-[calc(100%+100px)] top-2/4 hidden translate-y-[-50%] rounded border border-gray-100 bg-white p-3 shadow-lg group-hover:block">
+                      <div
+                        style={{
+                          height: `${item.image.height / 2}px`,
+                          width: `${item.image.width / 2}px`,
+                          position: 'relative',
+                        }}
+                      >
+                        <Image
+                          src={item.image.src}
+                          height={item.image.height}
+                          width={item.image.width}
+                          alt={item.name}
+                          layout="fill"
+                          objectFit="contain"
+                        />
+                      </div>
+                    </div>
+                    {item.name}
+                  </span>{' '}
+                  <Newtab size={14} />
                 </h3>
               </a>
               <p className="text-sm text-gray-500">{item.period}</p>
@@ -90,7 +122,7 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-5">{item.description}</p>
+              <p className="text-secondary mt-5">{item.description}</p>
               {item.pages && (
                 <ul className="mt-4">
                   {item.pages.map((page) => (

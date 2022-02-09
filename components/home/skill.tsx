@@ -177,6 +177,10 @@ export default function Skill() {
             height: calc((62px * 8) + 7px + 54px); /* (row-height * amount) + (amount - 1) + header-height */
           }
 
+          .Polaris-DataTable__Cell--numeric {
+            color: #687076;
+          }
+
           .Polaris-DataTable__Table thead,
           .Polaris-DataTable__Table thead tr,
           .Polaris-DataTable__Table thead tr th {
