@@ -129,7 +129,7 @@ function ProjectCardImage({ src, alt }: { src: string; alt: string }) {
         style={{ height: '100%', width: '100%', position: 'relative' }}
         className="overflow-hidden rounded-md border border-gray-100 shadow-lg"
       >
-        <Image src={src} height={1890} width={3024} alt={alt} layout="fill" objectFit="cover" />
+        <Image src={src} alt={alt} layout="fill" objectFit="cover" />
       </div>
     </div>
   )

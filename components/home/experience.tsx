@@ -91,7 +91,7 @@ export default function Experience() {
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="link">
                 <h3 className="text-xl font-bold">
                   <span className="group relative">
-                    <div className="absolute left-[calc(100%+100px)] top-2/4 hidden translate-y-[-50%] rounded border border-gray-100 bg-white p-3 shadow-lg group-hover:block">
+                    <div className="absolute left-[calc(100%+100px)] top-2/4 hidden translate-y-[-50%] rounded-md border border-gray-100 bg-white p-3 shadow-lg group-hover:block">
                       <div
                         style={{
                           height: `${item.image.height / 2}px`,
@@ -99,14 +99,7 @@ export default function Experience() {
                           position: 'relative',
                         }}
                       >
-                        <Image
-                          src={item.image.src}
-                          height={item.image.height}
-                          width={item.image.width}
-                          alt={item.name}
-                          layout="fill"
-                          objectFit="contain"
-                        />
+                        <Image src={item.image.src} alt={item.name} layout="fill" objectFit="contain" />
                       </div>
                     </div>
                     {item.name}
