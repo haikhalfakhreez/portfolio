@@ -7,8 +7,16 @@ export default function Index() {
       <div className="grid gap-y-6 py-16 text-center">
         {/* TODO: image */}
         <div className="flex justify-center">
-          <div className="h-44 w-44 overflow-hidden rounded-full border border-gray-200">
-            <Image src="/assets/image/portrait.png" height={176} width={176} alt="Haikhal Fakhreez Portrait" />
+          <div className="relative h-44 w-44 overflow-hidden rounded-full border border-gray-100 shadow-lg">
+            <Image
+              src="/assets/image/portrait.png"
+              height={176}
+              width={176}
+              alt="Haikhal Fakhreez Portrait"
+              layout="fill"
+              objectFit="cover"
+              className="origin-bottom transition-transform hover:scale-125"
+            />
           </div>
         </div>
         <h1 className="section-title">Haikhal Fakhreez</h1>

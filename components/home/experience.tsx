@@ -91,17 +91,12 @@ export default function Experience() {
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="link">
                 <h3 className="text-xl font-bold">
                   <span className="group relative">
-                    <div className="absolute left-[calc(100%+100px)] top-2/4 hidden translate-y-[-50%] rounded-md border border-gray-100 bg-white p-3 shadow-lg group-hover:block">
-                      <div
-                        style={{
-                          height: `${item.image.height / 2}px`,
-                          width: `${item.image.width / 2}px`,
-                          position: 'relative',
-                        }}
-                      >
-                        <Image src={item.image.src} alt={item.name} layout="fill" objectFit="contain" />
-                      </div>
-                    </div>
+                    <HoverOverImage
+                      height={item.image.height}
+                      width={item.image.width}
+                      src={item.image.src}
+                      alt={item.name}
+                    />
                     {item.name}
                   </span>{' '}
                   <Newtab size={14} />
@@ -144,6 +139,22 @@ export default function Experience() {
           </ul>
         </div>
       </section>
+    </div>
+  )
+}
+
+function HoverOverImage({ height, width, src, alt }: { height: number; width: number; src: string; alt: string }) {
+  return (
+    <div className="invisible absolute left-[calc(100%+100px)] top-2/4 translate-y-1 rounded-md border-2 border-dotted border-gray-300 bg-white py-3 px-6 opacity-0 shadow-lg transition-all group-hover:visible group-hover:translate-y-[-50%] group-hover:opacity-100">
+      <div
+        style={{
+          height: `${height / 2}px`,
+          width: `${width / 2}px`,
+          position: 'relative',
+        }}
+      >
+        <Image src={src} alt={alt} layout="fill" objectFit="contain" />
+      </div>
     </div>
   )
 }
