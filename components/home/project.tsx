@@ -60,35 +60,17 @@ export default function Project() {
                   )}
 
                   {/* Button */}
-                  <div className="mt-1 flex gap-3">
-                    {item.codeUrl && (
-                      <a
-                        href={item.codeUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gray-200 py-1 px-2 text-xs text-gray-500 hover:bg-gray-300"
-                      >
-                        See Code
-                      </a>
-                    )}
-                    {item.figmaUrl && (
-                      <a
-                        href={item.figmaUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gray-200 py-1 px-2 text-xs text-gray-500 hover:bg-gray-300"
-                      >
-                        See Figma
-                      </a>
-                    )}
+                  <div className="mt-3 flex gap-3">
+                    {item.codeUrl && <ProjectCardButton href={item.codeUrl} text="See Code" />}
+                    {item.figmaUrl && <ProjectCardButton href={item.figmaUrl} text="See Figma" />}
                   </div>
 
                   {/* Description */}
-                  <p className="text-secondary pt-4">{item.description}</p>
+                  <p className="text-secondary pt-6">{item.description}</p>
                 </div>
 
                 {/* Tech stack */}
-                <ul className="mt-4 flex gap-2">
+                <ul className="mt-5 flex gap-2">
                   {item.techStack.map((tech) => (
                     <li className="text-xxs rounded-md bg-gray-700 px-2 py-[2px] text-white" key={tech}>
                       {tech}
@@ -130,5 +112,18 @@ function ProjectCardImage({ src, alt }: { src: string; alt: string }) {
         <Image src={src} alt={alt} layout="fill" objectFit="cover" />
       </div>
     </div>
+  )
+}
+
+function ProjectCardButton({ href, text }: { href: string; text: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded bg-blue-100 py-1 px-2 text-xs font-bold text-blue-800 hover:bg-blue-200"
+    >
+      {text}
+    </a>
   )
 }

@@ -29,7 +29,7 @@ export default function About() {
             href="https://blog.adeasy.co/how-i-learnt-to-code-in-3-months-and-got-hired"
             target="_blank"
             rel="noopener noreferrer"
-            className="link text-blue-500"
+            className="link text-blue-600"
           >
             read my story here
           </a>
