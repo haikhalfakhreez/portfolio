@@ -179,6 +179,10 @@ export default function Skill() {
             border-collapse: separate;
           }
 
+          .Polaris-DataTable__Heading {
+            outline: none;
+          }
+
           .Polaris-DataTable__ScrollContainer {
             overflow-y: auto;
             height: calc((62px * 8) + 7px + 54px); /* (row-height * amount) + (amount - 1) + header-height */

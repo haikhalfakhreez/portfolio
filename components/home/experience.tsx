@@ -145,7 +145,7 @@ export default function Experience() {
 
 function HoverOverImage({ height, width, src, alt }: { height: number; width: number; src: string; alt: string }) {
   return (
-    <div className="invisible absolute left-[calc(100%+100px)] top-2/4 translate-y-1 rounded-md border-2 border-dotted border-gray-300 bg-white py-3 px-6 opacity-0 shadow-lg transition-all group-hover:visible group-hover:translate-y-[-50%] group-hover:opacity-100">
+    <div className="invisible absolute left-[calc(100%+10px)] top-2/4 translate-y-1 rounded-md border-2 border-dotted border-gray-300 bg-white py-3 px-6 opacity-0 shadow-lg transition-all group-hover:visible group-hover:translate-y-[-50%] group-hover:opacity-100 sm:left-[calc(100%+100px)]">
       <div
         style={{
           height: `${height / 2}px`,
