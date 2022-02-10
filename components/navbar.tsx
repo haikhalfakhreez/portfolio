@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className={`${layoutStyles.navContainer} flex h-full items-center justify-between`}>
         {/* Logo */}
         <Link href="/">
-          <a onClick={goToTop} className="ml-6">
+          <a onClick={goToTop} className="">
             <h2 className="text-xl font-bold">Haikhal Fakhreez</h2>
           </a>
         </Link>
