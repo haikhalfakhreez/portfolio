@@ -7,11 +7,11 @@ import Newtab from './assets/newtab'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-white pb-20">
       <div className="mb-20 flex justify-center">
         <div className="h-px w-[50px] shrink-0 bg-gray-200" role="separator"></div>
       </div>
-      <div className={`${layoutStyles.navContainer} mb-20 sm:flex`}>
+      <div className={`${layoutStyles.navContainer} sm:flex`}>
         {/* Logo */}
         <div className="flex items-center sm:w-6/12 sm:flex-col sm:items-start">
           <Link href="/">
