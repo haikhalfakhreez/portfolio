@@ -179,8 +179,10 @@ export default function Skill() {
             border-collapse: separate;
           }
 
-          .Polaris-DataTable__Heading {
+          .Polaris-DataTable__Heading,
+          .Polaris-DataTable__Heading::after {
             outline: none;
+            box-shadow: none;
           }
 
           .Polaris-DataTable__ScrollContainer {
@@ -199,6 +201,7 @@ export default function Skill() {
             top: 0;
             background: #fff;
             z-index: 1;
+            border-radius: 8px 8px 0 0;
           }
         `}</style>
       </section>
