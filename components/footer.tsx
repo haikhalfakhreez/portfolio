@@ -26,45 +26,39 @@ export default function Footer() {
 
         <div className="mt-8 grid gap-y-8 sm:mt-0 sm:grow sm:grid-cols-2 sm:gap-y-0 sm:gap-x-3">
           {/* Nav */}
-          <FooterList
-            title="Website"
-            children={
-              <ul>
-                {navItems.map((item: string) =>
-                  item === 'Home' ? (
-                    <li className="pt-3 text-sm" key={item}>
-                      <a href="/" onClick={goToTop} className="text-secondary link">
-                        {item}
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="pt-3 text-sm" key={item}>
-                      <a href={`#${item.toLowerCase()}`} className="text-secondary link">
-                        {item}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            }
-          />
-
-          {/* Socials */}
-          <FooterList
-            title="Socials"
-            children={
-              <ul>
-                {contacts.map((item) => (
-                  <li className="pt-3 text-sm" key={item.name}>
-                    <a href={item.url} className="text-secondary link" target="_blank" rel="noopener noreferrer">
-                      {item.name}
-                      <Newtab size={10} color="#687076" className="ml-1" />
+          <FooterList title="Website">
+            <ul>
+              {navItems.map((item: string) =>
+                item === 'Home' ? (
+                  <li className="pt-3 text-sm" key={item}>
+                    <a href="/" onClick={goToTop} className="text-secondary link">
+                      {item}
                     </a>
                   </li>
-                ))}
-              </ul>
-            }
-          />
+                ) : (
+                  <li className="pt-3 text-sm" key={item}>
+                    <a href={`#${item.toLowerCase()}`} className="text-secondary link">
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
+            </ul>
+          </FooterList>
+
+          {/* Socials */}
+          <FooterList title="Socials">
+            <ul>
+              {contacts.map((item) => (
+                <li className="pt-3 text-sm" key={item.name}>
+                  <a href={item.url} className="text-secondary link" target="_blank" rel="noopener noreferrer">
+                    {item.name}
+                    <Newtab size={10} color="#687076" className="ml-1" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </FooterList>
         </div>
       </div>
     </footer>

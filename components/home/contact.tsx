@@ -35,7 +35,13 @@ export default function Contact() {
         <div className="mx-auto px-1 sm:max-w-3xl sm:px-0">
           <div className="grid gap-4 sm:grid-cols-3">
             {contacts.map((item) => (
-              <ContactCard href={item.url} name={item.name} icon={item.icon} description={item.description} />
+              <ContactCard
+                key={item.name}
+                href={item.url}
+                name={item.name}
+                icon={item.icon}
+                description={item.description}
+              />
             ))}
           </div>
           <p className="pt-20 pb-16 text-center">

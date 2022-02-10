@@ -10,8 +10,6 @@ export default function Index() {
           <div className="relative h-44 w-44 overflow-hidden rounded-full border border-gray-100 shadow-lg">
             <Image
               src="/assets/image/portrait.png"
-              height={176}
-              width={176}
               alt="Haikhal Fakhreez Portrait"
               layout="fill"
               objectFit="cover"
