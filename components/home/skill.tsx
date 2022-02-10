@@ -119,7 +119,7 @@ export default function Skill() {
     for (const [key, value] of Object.entries(rawData)) {
       value.forEach((item: SkillItem) => {
         initialRow.push([
-          <div className="flex items-center gap-x-5">
+          <div key={item.name} className="flex items-center gap-x-5">
             <Image src={item.logoPath} height={30} width={30} alt={item.name} layout="fixed" />
             <span className="text-base font-medium">{item.name}</span>
           </div>,
@@ -149,7 +149,14 @@ export default function Skill() {
               <Card>
                 <DataTable
                   columnContentTypes={['text', 'numeric']}
-                  headings={[<div className="font-bold">Technology</div>, <div className="font-bold">Category</div>]}
+                  headings={[
+                    <div key="Technology" className="font-bold">
+                      Technology
+                    </div>,
+                    <div key="Category" className="font-bold">
+                      Category
+                    </div>,
+                  ]}
                   rows={rows}
                   sortable={[true, true]}
                   onSort={handleSort}

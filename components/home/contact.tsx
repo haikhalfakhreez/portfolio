@@ -72,7 +72,7 @@ function ContactCard({ href, name, icon, description }: ContactCardType) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" key={name} className="flex">
       <div className="grow rounded-md p-5 transition-transform hover:translate-y-[-2px] hover:shadow hover:shadow-gray-300">
-        <Image src={icon} height={30} width={30} />
+        <Image src={icon} height={30} width={30} alt={name} />
         <h3 className="mt-4 text-xl font-bold">{name}</h3>
         <p className="text-secondary mt-2">{description}</p>
       </div>

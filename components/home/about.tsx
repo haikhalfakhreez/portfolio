@@ -24,7 +24,7 @@ export default function About() {
         </div>
 
         <p className="mb-8 text-center italic">
-          I was recently featured on AdEasy's blog,{' '}
+          I was recently featured on AdEasy&apos;s blog,{' '}
           <a
             href="https://blog.adeasy.co/how-i-learnt-to-code-in-3-months-and-got-hired"
             target="_blank"
@@ -37,7 +37,7 @@ export default function About() {
         </p>
 
         <div id="aboutMarkdown">
-          <ReactMarkdown children={aboutPost} className={markdownStyles.markdown} />
+          <ReactMarkdown className={markdownStyles.markdown}>{aboutPost}</ReactMarkdown>
         </div>
       </section>
     </div>

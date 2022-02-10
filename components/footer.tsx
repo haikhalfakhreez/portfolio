@@ -1,5 +1,6 @@
 import layoutStyles from '../styles/layout.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import { navItems, goToTop } from './navbar'
 import { contacts } from './home/contact'
 import Newtab from './assets/newtab'
@@ -13,9 +14,11 @@ export default function Footer() {
       <div className={`${layoutStyles.navContainer} mb-20 sm:flex`}>
         {/* Logo */}
         <div className="flex items-center sm:w-6/12 sm:flex-col sm:items-start">
-          <a href="/" onClick={goToTop} className="flex items-center justify-center">
-            <Image src="/hf-logo.svg" height={35} width={35} alt="Haikhal Fakhreez Logo" />
-          </a>
+          <Link href="/">
+            <a onClick={goToTop} className="flex items-center justify-center">
+              <Image src="/hf-logo.svg" height={35} width={35} alt="Haikhal Fakhreez Logo" />
+            </a>
+          </Link>
           <div className="ml-6 sm:ml-0">
             <p className="text-sm text-gray-500 sm:mt-4">
               Made with<span className="mx-1">❤️</span>by <span className="font-bold">Haikhal Fakhreez</span>
@@ -31,9 +34,11 @@ export default function Footer() {
               {navItems.map((item: string) =>
                 item === 'Home' ? (
                   <li className="pt-3 text-sm" key={item}>
-                    <a href="/" onClick={goToTop} className="text-secondary link">
-                      {item}
-                    </a>
+                    <Link href="/">
+                      <a onClick={goToTop} className="text-secondary link">
+                        {item}
+                      </a>
+                    </Link>
                   </li>
                 ) : (
                   <li className="pt-3 text-sm" key={item}>
