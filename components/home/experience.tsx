@@ -11,7 +11,7 @@ const experiences = [
       width: 230,
     },
     url: 'https://app.involve.asia',
-    period: 'Nov 2020 - Current',
+    period: 'Nov 2021 - Current',
     techStack: ['Vue', 'Laravel', 'jQuery', 'Bootstrap', 'SCSS', 'DataTable'],
     description:
       'Involve Asia is an affliate marketing platform based in Malaysia. My main role is to maintain current dashboard by migrating legacy code into newer formats and implement new features on top of existing one.',
@@ -24,7 +24,7 @@ const experiences = [
       width: 154.7,
     },
     url: 'https://adeasy.co',
-    period: 'Jan 2020 - Oct 2020',
+    period: 'Jan 2021 - Oct 2021',
     techStack: ['Vue', 'Laravel', 'jQuery', 'Bootstrap', 'SCSS', 'Google Map API', 'Hubspot'],
     description:
       'AdEasy is an online marketplace for buying ad space in Malaysia. As the only front-end developer, my main role is to revamp old pages based on designer’s mockup. Pages revamped include:',

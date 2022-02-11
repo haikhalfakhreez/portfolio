@@ -23,7 +23,7 @@ export default function Footer() {
             <p className="text-sm text-gray-500 sm:mt-4">
               Made with<span className="mx-1">❤️</span>by <span className="font-bold">Haikhal Fakhreez</span>
             </p>
-            <p className="mt-1 text-xs text-gray-500">Last Updated: January 2022</p>
+            <p className="mt-1 text-xs text-gray-500">Last Updated: February 2022</p>
           </div>
         </div>
 
