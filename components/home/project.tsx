@@ -4,6 +4,15 @@ import Image from 'next/image'
 
 const projects = [
   {
+    name: 'Pokémon Library',
+    image: '/assets/image/pokemon-library.png',
+    codeUrl: 'https://github.com/haikhalfakhreez/pokemon-library',
+    pageUrl: 'https://pokemon-library.vercel.app/',
+    description:
+      'Build with Remix 💿 (React) and Tailwind, this library of Pokémon is using the IntersectionObserver API for infinite scrolling. Data is retrieved from <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer" class="link-inverse">PokeAPI</a>.',
+    techStack: ['Remix', 'Tailwind', 'TypeScript', 'IntersectionObserver API'],
+  },
+  {
     name: 'New Portfolio (Current)',
     image: '/assets/image/new-portfolio.png',
     codeUrl: 'https://github.com/haikhalfakhreez/portfolio',
@@ -66,7 +75,7 @@ export default function Project() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-secondary pt-6">{item.description}</p>
+                  <p className="text-secondary pt-6" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                 </div>
 
                 {/* Tech stack */}
