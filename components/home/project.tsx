@@ -1,6 +1,7 @@
 import layoutStyles from '../../styles/layout.module.scss'
 import Newtab from '../assets/newtab'
 import Image from 'next/image'
+import TechStack from '../assets/techstack'
 
 const projects = [
   {
@@ -18,7 +19,7 @@ const projects = [
     codeUrl: 'https://github.com/haikhalfakhreez/portfolio',
     figmaUrl: 'https://www.figma.com/file/Cb6QhisBG7NYow0cHrZNrj/Portfolio?node-id=0%3A1',
     description:
-      'This website is build using Next.js and styled using Tailwind. I designed this website from scratch using Figma and you can find the mock-up by clicking the link above.',
+      'This website is build using Next.js and styled using Tailwind. I designed this website from scratch using Figma and the mock-up can be found by clicking the link above.',
     techStack: ['Next.js', 'Tailwind', 'Figma', 'TypeScript'],
   },
   {
@@ -79,13 +80,7 @@ export default function Project() {
                 </div>
 
                 {/* Tech stack */}
-                <ul className="mt-5 flex gap-2">
-                  {item.techStack.map((tech) => (
-                    <li className="text-xxs rounded-md bg-gray-700 px-2 py-[2px] text-white" key={tech}>
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
+                <TechStack list={item.techStack} className="mt-5" />
               </div>
             </div>
           ))}

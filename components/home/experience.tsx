@@ -1,6 +1,7 @@
 import layoutStyles from '../../styles/layout.module.scss'
 import Newtab from '../assets/newtab'
 import Image from 'next/image'
+import TechStack from '../assets/techstack'
 
 const experiences = [
   {
@@ -103,13 +104,9 @@ export default function Experience() {
                 </h3>
               </a>
               <p className="text-sm text-gray-500">{item.period}</p>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {item.techStack.map((tech) => (
-                  <li className="rounded-md bg-gray-700 px-2 py-[2px] text-xs text-white" key={tech}>
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+
+              <TechStack list={item.techStack} className="mt-3" />
+
               <p className="text-secondary mt-5">{item.description}</p>
               {item.pages && (
                 <ul className="mt-4">
