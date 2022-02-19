@@ -14,6 +14,15 @@ const projects = [
     techStack: ['Remix', 'Tailwind', 'TypeScript', 'IntersectionObserver API'],
   },
   {
+    name: 'Webconvert',
+    image: '/assets/image/webconvert.png',
+    codeUrl: 'https://github.com/haikhalfakhreez/webconvert',
+    pageUrl: 'https://webconvert.netlify.app/',
+    description:
+      'Develop for my own use. Convert px to rem or vice versa. Build with Next.js and Tailwind. Deployed on Netlify.',
+    techStack: ['Next.js', 'Tailwind'],
+  },
+  {
     name: 'New Portfolio (Current)',
     image: '/assets/image/new-portfolio.png',
     codeUrl: 'https://github.com/haikhalfakhreez/portfolio',
