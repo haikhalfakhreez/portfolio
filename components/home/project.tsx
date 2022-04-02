@@ -5,6 +5,15 @@ import TechStack from '../assets/techstack'
 
 const projects = [
   {
+    name: 'ImageReader',
+    image: '/assets/image/image-reader.png',
+    codeUrl: 'https://github.com/haikhalfakhreez/ImageReader',
+    pageUrl: 'https://image-reader.vercel.app/',
+    description:
+      'A simple image reader that can extract text from image using Optical Character Recognition (OCR) technology, powered by <a href="https://github.com/naptha/tesseract.js" target="_blank" rel="noopener noreferrer" class="link-inverse">Tesseract.js</a>.',
+    techStack: ['Tesseract.js', 'Next.js', 'Tailwind'],
+  },
+  {
     name: 'Pokémon Library',
     image: '/assets/image/pokemon-library.png',
     codeUrl: 'https://github.com/haikhalfakhreez/pokemon-library',
