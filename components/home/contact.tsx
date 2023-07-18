@@ -55,6 +55,7 @@ export default function Contact() {
               haikhalfakhreez@gmail.com
             </a>
           </p>
+          <p className="py-4 text-center">Partner with Involve</p>
         </div>
       </section>
     </div>
@@ -74,7 +75,7 @@ function ContactCard({ href, name, icon, description }: ContactCardType) {
       <div className="grow rounded-md p-5 transition-transform hover:translate-y-[-2px] hover:shadow hover:shadow-gray-300">
         <Image src={icon} height={30} width={30} alt={name} />
         <h3 className="mt-4 text-xl font-bold">{name}</h3>
-        <p className="text-secondary mt-2">{description}</p>
+        <p className="mt-2 text-secondary">{description}</p>
       </div>
     </a>
   )
