@@ -1,3 +1,10 @@
-# Haikhal Fakhreez's site (written with Next.js)
+# Haikhal Fakhreez's site
 
-[Go live!](https://www.haikhalfakhreez.com/)
+[https://www.haikhalfakhreez.com](https://www.haikhalfakhreez.com)
+
+## Tech stack
+
+- Next.js 13 App Directory
+- Next MDX Component
+- Tailwind CSS
+- Dark mode with `next-themes`
