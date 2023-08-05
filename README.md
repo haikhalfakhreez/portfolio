@@ -1,4 +1,6 @@
-# Haikhal Fakhreez's site
+# Portfolio site
+
+<sub>Last updated: August 2023</sub>
 
 [https://www.haikhalfakhreez.com](https://www.haikhalfakhreez.com)
 
