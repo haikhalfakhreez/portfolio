@@ -1,32 +1,41 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@plugin "@tailwindcss/forms";
 @plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 }
 
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+    border-color: var(--color-gray-200, currentColor);
   }
 }
 
 @utility focus-border {
-  @apply focus:outline-hidden focus:ring-2 focus:ring-indigo-500/50 border border-gray-200 dark:border-gray-600 focus:border-indigo-500 dark:focus:border-indigo-500;
+  @apply border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 focus:outline-hidden dark:border-gray-600 dark:focus:border-indigo-500;
 }
 
 @layer base {
   a,
   area,
   button,
-  [role='button'],
+  [role="button"],
   input,
   label,
   select,
