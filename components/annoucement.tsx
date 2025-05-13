@@ -1,6 +1,6 @@
 export function Announcement() {
   return (
-    <div className="py-1 md:py-2 px-3 rounded bg-indigo-50 dark:bg-indigo-800 text-[10px] md:text-xs border border-indigo-200 dark:border-indigo-700 my-10">
+    <div className="py-1 md:py-2 px-3 rounded-sm bg-indigo-50 dark:bg-indigo-800 text-[10px] md:text-xs border border-indigo-200 dark:border-indigo-700 my-10">
       📢 <span className="font-semibold">Announcement</span>: I have recently released an update to
       my{' '}
       <a

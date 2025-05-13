@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import { Section } from '@/components/section'
-import { SiteLink } from '@/components/site-link'
-import Portrait from '@/app/portrait.png'
+import Image from "next/image";
+import { Section } from "@/components/section";
+import { SiteLink } from "@/components/site-link";
+import Portrait from "@/app/portrait.png";
 
 export function Introduction() {
   return (
@@ -13,7 +13,7 @@ export function Introduction() {
           className="h-14 w-14 shrink-0 rounded-full"
         />
         <div>
-          <p>Next.js (React.js) senior software engineer from Malaysia 🇲🇾</p>
+          <p>Full-stack senior software engineer from Malaysia 🇲🇾</p>
           <SiteLink
             href="https://github.com/haikhalfakhreez?tab=repositories"
             className="text-sm"
@@ -26,5 +26,5 @@ export function Introduction() {
         </div>
       </div>
     </Section>
-  )
+  );
 }
