@@ -13,7 +13,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <select onChange={onChange} className="focus-border pl-3 pr-8 py-2 text-xs rounded">
+    <select onChange={onChange} className="focus-border pl-3 pr-8 py-2 text-xs rounded-sm">
       {themes.map((item) => (
         <option key={item} value={item}>
           {item}
