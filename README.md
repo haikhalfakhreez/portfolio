@@ -1,12 +1,12 @@
 # Portfolio site
 
-<sub>Last updated: August 2023</sub>
+<sub>Last updated: May 2025</sub>
 
-[https://www.haikhalfakhreez.com](https://www.haikhalfakhreez.com)
+https://haikhalfakhreez.com
 
 ## Tech stack
 
-- Next.js 13 App Directory
+- Next.js 15
+- Tailwind CSS v4
 - Next MDX Component
-- Tailwind CSS
 - Dark mode with `next-themes`
